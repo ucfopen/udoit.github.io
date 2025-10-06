@@ -1,0 +1,413 @@
+/* Bootstrap-esque classes for general use */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column, .flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-grow-0 {
+  flex-grow: 0;
+}
+
+.flex-shrink-1 {
+  flex-shrink: 1;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.justify-content-start, .flex-start {
+  justify-content: flex-start;
+}
+
+.justify-content-end, .flex-end {
+  justify-content: flex-end;
+}
+
+.justify-content-center, .flex-center {
+  justify-content: center;
+}
+
+.justify-content-between, .flex-between {
+  justify-content: space-between;
+}
+
+.justify-content-around, .flex-around {
+  justify-content: space-around;
+}
+
+.justify-content-evenly, .flex-evenly {
+  justify-content: space-evenly;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-baseline {
+  align-items: baseline;
+}
+
+.align-items-stretch {
+  align-items: stretch;
+}
+
+.align-self-start {
+  align-self: flex-start;
+}
+
+.align-self-end {
+  align-self: flex-end;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.align-self-baseline {
+  align-self: baseline;
+}
+
+.align-self-stretch {
+  align-self: stretch;
+}
+
+.scrollable {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.non-scrollable {
+  overflow: hidden;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.gap-1 {
+  gap: 0.5rem;
+}
+
+.gap-2 {
+  gap: 1rem;
+}
+
+.gap-3 {
+  gap: 1.5rem;
+}
+
+.gap-4 {
+  gap: 2rem;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.m-1 {
+  margin: calc(0.25 * var(--spacer)) !important;
+}
+
+.m-2 {
+  margin: calc(0.5 * var(--spacer)) !important;
+}
+
+.m-3 {
+  margin: var(--spacer) !important;
+}
+
+.mt-0 {
+  margin-block-start: 0 !important;
+}
+
+.mt-1 {
+  margin-block-start: calc(0.25 * var(--spacer)) !important;
+}
+
+.mt-2 {
+  margin-block-start: calc(0.5 * var(--spacer)) !important;
+}
+
+.mt-3 {
+  margin-block-start: var(--spacer) !important;
+}
+
+.mt-4 {
+  margin-block-start: calc(1.5 * var(--spacer)) !important;
+}
+
+.mb-0 {
+  margin-block-end: 0 !important;
+}
+
+.mb-1 {
+  margin-block-end: calc(0.25 * var(--spacer)) !important;
+}
+
+.mb-2 {
+  margin-block-end: calc(0.5 * var(--spacer)) !important;
+}
+
+.mb-3 {
+  margin-block-end: var(--spacer) !important;
+}
+
+.mb-4 {
+  margin-block-end: calc(1.5 * var(--spacer)) !important;
+}
+
+.ml-0, .ms-0 {
+  margin-inline-start: 0 !important;
+}
+
+.ml-1, .ms-1 {
+  margin-inline-start: calc(0.25 * var(--spacer)) !important;
+}
+
+.ml-2, .ms-2 {
+  margin-inline-start: calc(0.5 * var(--spacer)) !important;
+}
+
+.ml-3, .ms-3 {
+  margin-inline-start: var(--spacer) !important;
+}
+
+.ml-4, .ms-4 {
+  margin-inline-start: calc(1.5 * var(--spacer)) !important;
+}
+
+.mr-0, .me-0 {
+  margin-inline-end: 0 !important;
+}
+
+.mr-1, .me-1 {
+  margin-inline-end: calc(0.25 * var(--spacer)) !important;
+}
+
+.mr-2, .me-2 {
+  margin-inline-end: calc(0.5 * var(--spacer)) !important;
+}
+
+.mr-3, .me-3 {
+  margin-inline-end: var(--spacer) !important;
+}
+
+.mr-4, .me-4 {
+  margin-inline-end: calc(1.5 * var(--spacer)) !important;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.p-1 {
+  padding: calc(0.25 * var(--spacer)) !important;
+}
+.p-2 {
+  padding: calc(0.5 * var(--spacer)) !important;
+}
+
+.p-3 {
+  padding: calc(var(--spacer)) !important;
+}
+
+.p-4 {
+  padding: calc(1.5 * var(--spacer)) !important;
+}
+
+.pt-0 {
+  padding-block-start: 0 !important;
+}
+
+.pt-1 {
+  padding-block-start: calc(0.25 * var(--spacer)) !important;
+}
+
+.pt-2 {
+  padding-block-start: calc(0.5 * var(--spacer)) !important;
+}
+
+.pt-3 {
+  padding-block-start: var(--spacer) !important;
+}
+
+.pt-4 {
+  padding-block-start: calc(1.5 * var(--spacer)) !important;
+}
+
+.pb-0 {
+  padding-block-end: 0 !important;
+}
+
+.pb-1 {
+  padding-block-end: calc(0.25 * var(--spacer)) !important;
+}
+
+.pb-2 {
+  padding-block-end: calc(0.5 * var(--spacer)) !important;
+}
+
+.pb-3 {
+  padding-block-end: var(--spacer) !important;
+}
+
+.pb-4 {
+  padding-block-end: calc(1.5 * var(--spacer)) !important;
+}
+
+.pl-0, .ps-0 {
+  padding-inline-start: 0 !important;
+}
+
+.pl-1, .ps-1 {
+  padding-inline-start: calc(0.25 * var(--spacer)) !important;
+}
+
+.pl-2, .ps-2 {
+  padding-inline-start: calc(0.5 * var(--spacer)) !important;
+}
+
+.pl-3, .ps-3 {
+  padding-inline-start: var(--spacer) !important;
+}
+
+.pl-4, .ps-4 {
+  padding-inline-start: calc(1.5 * var(--spacer)) !important;
+}
+
+.pr-0, .pe-0 {
+  padding-inline-end: 0 !important;
+}
+
+.pr-1, .pe-1 {
+  padding-inline-end: calc(0.25 * var(--spacer)) !important;
+}
+
+.pr-2, .pe-2 {
+  padding-inline-end: calc(0.5 * var(--spacer)) !important;
+}
+
+.pr-3, .pe-3 {
+  padding-inline-end: var(--spacer) !important;
+}
+
+.pr-4, .pe-4 {
+  padding-inline-end: calc(1.5 * var(--spacer)) !important;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-25 {
+  height: 25%;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+.h-75 {
+  height: 75%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.fw-bold {
+  font-weight: 500;
+}
+
+.fw-bolder {
+  font-weight: 600;
+}
+
+.fw-normal {
+  font-weight: 400;
+}
+
+.fw-light {
+  font-weight: 300;
+}
+
+.fw-lighter {
+  font-weight: 200;
+}
+
+/* Theming variables */
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --link-color: #1a0dab;
+  --link-hover-color: #551a8b;
+}
+
+:root.dark {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --link-color: #8ab4f8;
+  --link-hover-color: #e8eaed;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
