@@ -1,0 +1,15 @@
+<header>
+  <nav class="flex-row justify-content-between">
+    <div id="css-site-title">Just Vanilla</div>
+    <div class="flex-row gap-4">
+      <ul>
+        <li {% if include.activePage == 'cssdemo' %}class="active"{% endif %}><a href="./cssdemo.html">CSS Demo</a></li>
+        <li {% if include.activePage == 'features' %}class="active"{% endif %}><a href="./index.html">Content Demo</a></li>
+      </ul>
+      <div class="checkbox">
+        <input type="checkbox" id="dark-mode-toggle" aria-label="Toggle dark mode" />
+        <label></label>
+      </div>
+    </div>
+  </nav>
+</header>

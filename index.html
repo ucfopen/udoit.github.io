@@ -1,8 +1,237 @@
 ---
 layout: default
-title: Home
+title: "UDOIT: Accessibility Scanning Tool for Online Course Content"
 ---
+{% include header.html activePage="features" %}
+<div id="hero" class="main-page-hero">
+  <div class="page-width flex-row justify-content-between h-100">
+    <div id="index-hero-text" class="hero-text-content flex-column justify-content-center pb-6">
+      <h1>UDOIT Accessibility Scanner</h1>
+      <p>Enhance online learning by removing accessibility barriers from online course content.</p>
+    </div>
+    <div class="hero-main-image-container flex-column justify-content-center ml-4">
+      <img src="./img/emblem.png" alt="Accessibility Logo" />
+    </div>
+  </div>
+</div>
 
-<main>
-  <h1>Hello, world!</h1>
+<main class="flex-row justify-content-between page-width">
+  <div id="main-content" class="flex-column flex-grow-1">
+    <section class="main-page-section">
+      <h2 id="what-is-udoit">What Is UDOIT?</h2>
+      <p>UDOIT is a free and open-source tool that teachers and institutions can use to find and repair common accessibility issues in their online course content. It integrates directly with the Canvas Learning Management System using the LTI standard, meaning that faculty and administrators can access it directly through Canvas without needing to leave the platform or log in separately.</p>
+      <p>UDOIT is an all-in-one solution that helps you:</p>
+
+      <details>
+        <summary>
+          <span role="term" aria-details="pure-css">Find accessibility barriers quickly with an automated scan</span>
+        </summary>
+      </details>
+      <div role="definition" id="pure-css" class="details-content">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi unde, ex rem voluptates autem aliquid veniam quis temporibus!</p>
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/ff/SuccessKid.jpg" width="420px" alt="Success kid" />
+        <p>
+          Facilis ducimus iure officia quos possimus quaerat iusto, quas, laboriosam sapiente autem ab consequuntur? Nihil, soluta.
+        </p>
+        <p><a title="Accessibility using aria-details" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-details" target="blank">The 'aria-details' and 'role' attributes have been implemented to ensure accessibility.</a></p>
+      </div>
+
+      <details>
+        <summary>
+          <span role="term" aria-details="pure-css2">Fix issues easily with simple tools and just-in-time instructions</span>
+        </summary>
+      </details>
+      <div role="definition" id="pure-css2" class="details-content">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi unde, ex rem voluptates autem aliquid veniam quis temporibus!</p>
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/ff/SuccessKid.jpg" width="420px" alt="Success kid" />
+        <p>
+          Facilis ducimus iure officia quos possimus quaerat iusto, quas, laboriosam sapiente autem ab consequuntur? Nihil, soluta.
+        </p>
+        <p><a title="Accessibility using aria-details" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-details" target="blank">The 'aria-details' and 'role' attributes have been implemented to ensure accessibility.</a></p>
+      </div>
+
+      <details>
+        <summary>
+          <span role="term" aria-details="pure-css3">Make steady progress with small daily goals and easy reporting tools</span>
+        </summary>
+      </details>
+      <div role="definition" id="pure-css3" class="details-content">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi unde, ex rem voluptates autem aliquid veniam quis temporibus!</p>
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/ff/SuccessKid.jpg" width="420px" alt="Success kid" />
+        <p>
+          Facilis ducimus iure officia quos possimus quaerat iusto, quas, laboriosam sapiente autem ab consequuntur? Nihil, soluta.
+        </p>
+        <p><a title="Accessibility using aria-details" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-details" target="blank">The 'aria-details' and 'role' attributes have been implemented to ensure accessibility.</a></p>
+      </div>
+
+    </section>
+    <section class="main-page-section">
+      <h2 id="issue-types">Who Does UDOIT Help?</h2>
+      <p>Removing accessibility barriers helps all users, not just those with disabilities. But special care needs to be made to ensure that those users are not kept from accessing content:</p>
+      <div class="css-tabs">
+        <!-- Tabs -->
+        <div class="tab-labels">
+          <input type="radio" id="tab-visual" name="user-tab" checked>
+          <label for="tab-visual">Visual Impairments</label>
+
+          <input type="radio" id="tab-hearing" name="user-tab">
+          <label for="tab-hearing">Hearing Impairments</label>
+
+          <input type="radio" id="tab-cognitive" name="user-tab">
+          <label for="tab-cognitive">Cognitive Disabilities</label>
+
+          <input type="radio" id="tab-motor" name="user-tab">
+          <label for="tab-motor">Motor Impairments</label>
+
+          <input type="radio" id="tab-language" name="user-tab">
+          <label for="tab-language">Foreign Language</label>
+        </div>
+
+        <!-- Content -->
+        <div class="contents">
+          <div id="content-visual" class="tab-content">
+            <h3>Users with Visual Impairments</h3>
+            <p>This is the overview tab content. It's shorter.</p>
+            <img src="./img/color-contrast-example.jpg" alt="Example of good and poor color contrast between text and background" />
+            <p>Image from <a href="https://www.culturehive.co.uk/resources/colour-contrast-accessibility/">CultureHive.co.uk</a></p>
+          </div>
+
+          <div id="content-hearing" class="tab-content">
+            <h3>Users with Hearing Impairments</h3>
+            <p>When text is short, the height is the tab height.</p>
+          </div>
+
+          <div id="content-cognitive" class="tab-content">
+            <h3>Users with Cognitive Disabilities</h3>
+            <p>When text is long, the height expands to fit the content.</p>
+          </div>
+
+          <div id="content-motor" class="tab-content">
+            <h3>Users with Motor Impairments</h3>
+            <p>When text is long, the height expands to fit the content.</p>
+          </div>
+
+          <div id="content-language" class="tab-content">
+            <h3>Foreign Language Speakers</h3>
+            <p>When text is long, the height expands to fit the content.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-page-section">
+      <h2 id="what-is-online-accessibility">What is Online Accessibility?</h2>
+      <p><code>&lt;summary&gt;</code> and <code>&lt;details&gt;</code> elements provide a way to include additional information that can be shown or hidden by the user.</p>
+      <details>
+        <summary>
+          <span role="term" aria-details="pure-css">Click to open and close smoothly with pure CSS</span>
+        </summary>
+      </details>
+      <div role="definition" id="pure-css" class="details-content">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi unde, ex rem voluptates autem aliquid veniam quis temporibus!</p>
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/ff/SuccessKid.jpg" width="420px" alt="Success kid" />
+        <p>
+          Facilis ducimus iure officia quos possimus quaerat iusto, quas, laboriosam sapiente autem ab consequuntur? Nihil, soluta.
+        </p>
+        <p><a title="Accessibility using aria-details" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-details" target="blank">The 'aria-details' and 'role' attributes have been implemented to ensure accessibility.</a></p>
+      </div>
+
+      <details>
+        <summary>
+          <span role="term" aria-details="pure-css2">Click to open and close smoothly with pure CSS</span>
+        </summary>
+      </details>
+      <div role="definition" id="pure-css2" class="details-content">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi unde, ex rem voluptates autem aliquid veniam quis temporibus!</p>
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/ff/SuccessKid.jpg" width="420px" alt="Success kid" />
+        <p>
+          Facilis ducimus iure officia quos possimus quaerat iusto, quas, laboriosam sapiente autem ab consequuntur? Nihil, soluta.
+        </p>
+        <p><a title="Accessibility using aria-details" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-details" target="blank">The 'aria-details' and 'role' attributes have been implemented to ensure accessibility.</a></p>
+      </div>
+
+      <details>
+        <summary>
+          <span role="term" aria-details="pure-css3">Click to open and close smoothly with pure CSS</span>
+        </summary>
+      </details>
+      <div role="definition" id="pure-css3" class="details-content">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi unde, ex rem voluptates autem aliquid veniam quis temporibus!</p>
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/ff/SuccessKid.jpg" width="420px" alt="Success kid" />
+        <p>
+          Facilis ducimus iure officia quos possimus quaerat iusto, quas, laboriosam sapiente autem ab consequuntur? Nihil, soluta.
+        </p>
+        <p><a title="Accessibility using aria-details" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-details" target="blank">The 'aria-details' and 'role' attributes have been implemented to ensure accessibility.</a></p>
+      </div>
+
+    </section>
+    <section class="main-page-section">
+      <h2 id="what-barriers">What Barriers Does UDOIT Check For?</h2>
+      <p>A tab interface where only one tab can be active at a time can be accomplished using radio buttons. This allows users to switch between different views or sections of content.</p>
+
+      <div class="css-tabs">
+        <!-- Tabs -->
+        <div class="tab-labels">
+          <input type="radio" id="tab1" name="css-tab" checked>
+          <label for="tab1">Overview</label>
+
+          <input type="radio" id="tab2" name="css-tab">
+          <label for="tab2">Short Text</label>
+
+          <input type="radio" id="tab3" name="css-tab">
+          <label for="tab3">Settings</label>
+        </div>
+
+        <!-- Content -->
+        <div class="contents">
+          <div id="content1" class="tab-content">
+            <h3>Overview</h3>
+            <p>This is the overview tab content. It's shorter.</p>
+          </div>
+
+          <div id="content2" class="tab-content">
+            <h3>Short Text</h3>
+            <p>When text is short, the height is the tab height.</p>
+          </div>
+
+          <div id="content3" class="tab-content">
+            <h3>Long Text</h3>
+            <p>When text is long, the height expands to fit the content.</p>
+            <p>There is more text...</p>
+            <p>There is more text...</p>
+            <p>There is more text...</p>
+            <p>There is more text...</p>
+            <p>There is more text...</p>
+            <p>There is more text...</p>
+            <p>There is more text...</p>
+            <p>There is more text...</p>
+            <p>There is more text...</p>
+            <p>There is more text...</p>
+            <p>There is more text...</p>
+            <p>There is more text...</p>
+            <p>There is more text...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <aside>
+    <div class="aside-content">
+      <h2>Quick Links</h2>
+      <nav aria-label="Page Navigation">
+        <ul>
+          <li><a href="#what-is-udoit">What Is UDOIT?</a></li>
+          <li><a href="#issue-types">Who Does UDOIT Help?</a></li>
+          <li><a href="#what-is-online-accessibility">What is Online Accessibility?</a></li>
+          <li><a href="#what-barriers">What Barriers Does UDOIT Check For?</a></li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
 </main>
+{% include footer.html %}

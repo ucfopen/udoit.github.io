@@ -2,15 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, minimum-scale=1.0" />
-    <title>{{ page.title || "UDOIT: Accessibility Scanning Tool for Online Course Content" }}</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/theme-toggles@4.10.1/css/classic.min.css">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="./css/boilerplate.css" />
+    <link rel="stylesheet" href="./css/theme.css" />
+    <link rel="stylesheet" href="./css/viewTransitions.css" />
+    <link rel="expect" href="#body" blocking="render" />
+    <link rel="icon" href="/UDOIT-logo-16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/UDOIT-logo-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="/UDOIT-logo-180.png" sizes="180x180">
+    <link rel="icon" href="/UDOIT-logo-192.png" sizes="192x192" type="image/png">
+    <script src="./js/delayViewRender.js"></script>
   </head>
-  <body>
-    {% include header.html %}
+  <body id="body">
     {{ content }}
-    {% include footer.html %}
+    <dialog id="imageDialog">
+      <figure>
+        <img src="" alt="" />
+        <figcaption></figcaption>
+      </figure>
+      <div class="flex-row justify-content-center w-100">
+        <button class="btn-small btn-secondary">Close</button>
+      </div>
+    </dialog>
   </body>
 </html>
 
 <script src="./js/persist.js"></script>
+<script src="./js/dialog.js"></script>

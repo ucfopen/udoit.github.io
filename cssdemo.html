@@ -1,0 +1,142 @@
+---
+layout: cssLayout
+title: "No Framework Needed"
+---
+{% include cssHeader.html activePage="cssdemo" %}
+<div id="hero" class="main-page-hero">
+  <div class="page-width flex-row justify-content-between h-100">
+    <div  id="demo-hero-text" class="hero-text-content flex-column justify-content-center pb-6">
+      <h1>No Framework Needed</h1>
+      <p>Using modern HTML and CSS, who needs React?</p>
+    </div>
+    <div class="hero-main-image-container-css flex-column justify-content-center ml-4">
+      <svg width="100%" height="100%" viewBox="-10.5 -9.45 21 18.9" fill="none" xmlns="http://www.w3.org/2000/svg" ><circle cx="0" cy="0" r="2"></circle><g stroke-width="1" fill="none"><ellipse rx="10" ry="4.5"></ellipse><ellipse rx="10" ry="4.5" transform="rotate(60)"></ellipse><ellipse rx="10" ry="4.5" transform="rotate(120)"></ellipse></g></svg>
+    </div>
+  </div>
+</div>
+
+<main class="flex-row justify-content-between page-width">
+  <div id="main-content" class="flex-column flex-grow-1">
+    <section class="main-page-section">
+      <h2 id="link1">Summary and Details</h2>
+      <p><code>&lt;summary&gt;</code> and <code>&lt;details&gt;</code> elements provide a way to include additional information that can be shown or hidden by the user.</p>
+      <details>
+        <summary>
+          <span role="term" aria-details="pure-css">Click to open and close smoothly with pure CSS</span>
+        </summary>
+      </details>
+      <div role="definition" id="pure-css" class="details-content">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi unde, ex rem voluptates autem aliquid veniam quis temporibus!</p>
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/ff/SuccessKid.jpg" width="420px" alt="Success kid" />
+        <p>
+          Facilis ducimus iure officia quos possimus quaerat iusto, quas, laboriosam sapiente autem ab consequuntur? Nihil, soluta.
+        </p>
+        <p><a title="Accessibility using aria-details" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-details" target="blank">The 'aria-details' and 'role' attributes have been implemented to ensure accessibility.</a></p>
+      </div>
+
+      <details>
+        <summary>
+          <span role="term" aria-details="pure-css2">Click to open and close smoothly with pure CSS</span>
+        </summary>
+      </details>
+      <div role="definition" id="pure-css2" class="details-content">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi unde, ex rem voluptates autem aliquid veniam quis temporibus!</p>
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/ff/SuccessKid.jpg" width="420px" alt="Success kid" />
+        <p>
+          Facilis ducimus iure officia quos possimus quaerat iusto, quas, laboriosam sapiente autem ab consequuntur? Nihil, soluta.
+        </p>
+        <p><a title="Accessibility using aria-details" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-details" target="blank">The 'aria-details' and 'role' attributes have been implemented to ensure accessibility.</a></p>
+      </div>
+
+      <details>
+        <summary>
+          <span role="term" aria-details="pure-css3">Click to open and close smoothly with pure CSS</span>
+        </summary>
+      </details>
+      <div role="definition" id="pure-css3" class="details-content">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi unde, ex rem voluptates autem aliquid veniam quis temporibus!</p>
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/ff/SuccessKid.jpg" width="420px" alt="Success kid" />
+        <p>
+          Facilis ducimus iure officia quos possimus quaerat iusto, quas, laboriosam sapiente autem ab consequuntur? Nihil, soluta.
+        </p>
+        <p><a title="Accessibility using aria-details" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-details" target="blank">The 'aria-details' and 'role' attributes have been implemented to ensure accessibility.</a></p>
+      </div>
+
+    </section>
+    <section class="main-page-section">
+      <h2 id="link2">Tabs and Tab Content</h2>
+      <p>A tab interface where only one tab can be active at a time can be accomplished using radio buttons. This allows users to switch between different views or sections of content.</p>
+
+      <div class="css-tabs">
+        <!-- Tabs -->
+        <div class="tab-labels">
+          <input type="radio" id="tab1" name="css-tab" checked>
+          <label for="tab1">Overview</label>
+
+          <input type="radio" id="tab2" name="css-tab">
+          <label for="tab2">Short Text</label>
+
+          <input type="radio" id="tab3" name="css-tab">
+          <label for="tab3">Settings</label>
+        </div>
+
+        <!-- Content -->
+        <div class="contents">
+          <div id="content1" class="tab-content">
+            <h3>Overview</h3>
+            <p>This is the overview tab content. It's shorter.</p>
+          </div>
+
+          <div id="content2" class="tab-content">
+            <h3>Short Text</h3>
+            <p>When text is short, the height is the tab height.</p>
+          </div>
+
+          <div id="content3" class="tab-content">
+            <h3>Long Text</h3>
+            <p>When text is long, the height expands to fit the content.</p>
+            <p>There is more text...</p>
+            <p>There is more text...</p>
+            <p>There is more text...</p>
+            <p>There is more text...</p>
+            <p>There is more text...</p>
+            <p>There is more text...</p>
+            <p>There is more text...</p>
+            <p>There is more text...</p>
+            <p>There is more text...</p>
+            <p>There is more text...</p>
+            <p>There is more text...</p>
+            <p>There is more text...</p>
+            <p>There is more text...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-page-section">
+      <h2 id="link3">Sticky Headers</h2>
+      <p>Sticky headers remain fixed at the top of the viewport as users scroll down the page, providing constant access to navigation and important information.</p>
+    </section>
+    <section class="main-page-section">
+      <h2 id="link4">View Transitions</h2>
+      <p>Yeah, but what if I want my web site to "feel like an app"? Usually that means interactivity and animations that are normally not allowed in CSS.</p>
+      <p>Or are they?</p>
+    </section>
+  </div>
+  <aside>
+    <div class="aside-content">
+      <h2>Quick Links</h2>
+      <nav aria-label="Page Navigation">
+        <ul>
+          <li><a href="#link1">Summary and Details</a></li>
+          <li><a href="#link2">Tabs and Tab Content</a></li>
+          <li><a href="#link3">Sticky Headers</a></li>
+          <li><a href="#link4">View Transitions</a></li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+</main>
+{% include footer.html %}

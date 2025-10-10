@@ -1,0 +1,158 @@
+/* View transitions are ONLY enabled for users who have not requested reduced motion */
+
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
+}
+
+/* Animating the root means the entire page is animated */
+::view-transition-old(root) {
+  animation: var(--delay-time) both slide-down-fade-out;
+}
+::view-transition-new(root) {
+  animation: var(--transition-time) var(--delay-time) both slide-up-fade-in;
+}
+
+/* Giving an element a view-transition-name means it will be animated independently from root */
+/* This makes it so the header is NOT part of any animation, since before and after are the same */
+header {
+  view-transition-name: header;
+}
+
+::view-transition {
+  pointer-events: none;
+}
+
+#hero {
+  view-transition-name: hero;
+  interpolate-size: allow-keywords;
+  /* contain: layout; */
+
+  #index-hero-text {
+    view-transition-name: index-hero-text;
+  }
+
+  #guide-hero-text {
+    view-transition-name: guide-hero-text;
+  }
+  
+  #roadmap-hero-text {
+    view-transition-name: roadmap-hero-text;
+  }
+
+  #installation-hero-text {
+    view-transition-name: installation-hero-text;
+  }
+
+  .hero-main-image-container {
+    view-transition-name: hero-main-image;
+  }
+
+  .hero-image-container {
+    view-transition-name: hero-image;
+  }
+}
+
+::view-transition-group(hero) {
+  animation-duration: var(--transition-time);
+  animation-delay: var(--delay-time);
+}
+
+::view-transition-old(hero) {
+  height: 100%;
+}
+
+::view-transition-new(hero) {
+  height: 100%;
+}
+
+/* Animate the old text sliding to the left and out */
+::view-transition-old(index-hero-text),
+::view-transition-old(guide-hero-text),
+::view-transition-old(roadmap-hero-text),
+::view-transition-old(installation-hero-text) {
+  animation: var(--delay-time) ease both slide-left-fade-out;
+}
+::view-transition-new(index-hero-text),
+::view-transition-new(guide-hero-text),
+::view-transition-new(roadmap-hero-text),
+::view-transition-new(installation-hero-text) {
+  animation: var(--transition-time) var(--delay-time) ease both slide-right-fade-in;
+}
+
+/* Animate the old image sliding to the left and out */
+::view-transition-old(hero-image),
+::view-transition-old(hero-main-image) {
+  animation: var(--delay-time) ease both slide-right-fade-out;
+}
+::view-transition-new(hero-image),
+::view-transition-new(hero-main-image) {
+  animation: var(--transition-time) var(--delay-time) ease both slide-left-fade-in;
+}
+
+@keyframes slide-left-fade-out {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-10vw);
+  }
+}
+
+@keyframes slide-right-fade-out {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(10vw);
+  }
+}
+
+@keyframes slide-left-fade-in {
+  from {
+    opacity: 0;
+    transform: translateX(10vw);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0vw);
+  }
+}
+
+@keyframes slide-right-fade-in {
+  from {
+    opacity: 0;
+    transform: translateX(-10vw);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-up-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10vh);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-down-fade-out {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(10vh);
+  }
+}

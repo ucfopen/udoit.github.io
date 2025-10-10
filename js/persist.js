@@ -8,7 +8,6 @@ if (savedTheme === 'dark') {
   root.classList.add('dark')
 } else if (savedTheme === 'light') {
   toggle.checked = false
-  root.classList.add('light')
 // If no saved preference, check to see if the user prefers dark mode
 } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
   toggle.checked = true
@@ -21,3 +20,9 @@ toggle.addEventListener('click', () => {
   root.classList.toggle('dark', isDark)
   localStorage.setItem('theme', isDark ? 'dark' : 'light')
 })
+
+document.startViewTransition(() => {
+  requestAnimationFrame(() => {
+    document.getElementById('body')?.classList.toggle('loaded');
+  });
+});
