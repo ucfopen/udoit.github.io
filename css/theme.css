@@ -230,10 +230,13 @@ header {
     line-height: 1.5em;
   }
 
+  .hero-main-image-containter {
+    height: 100%;
+  }
+
   .hero-main-image-container img {
     max-height: 80%;
-    max-width: 40vw;
-    min-width: 100px;
+    width: auto;
   }
 
   .hero-main-image-container-css svg{
@@ -331,6 +334,7 @@ aside {
 
 footer {
   border-block-start: 1px solid var(--text-color);
+  background: var(--white);
 }
 
 a {
